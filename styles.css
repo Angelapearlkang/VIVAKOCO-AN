@@ -17,6 +17,8 @@ header {
     margin: auto;
     overflow: hidden;
     padding: 20px;
+    display: flex;
+    justify-content: space-around;
 }
 
 .product {
@@ -25,6 +27,7 @@ header {
     margin: 10px;
     padding: 10px;
     text-align: center;
+    width: 30%;
 }
 
 .product img {
@@ -53,4 +56,34 @@ header {
 
 .product button:hover {
     background-color: #4cae4c;
+}
+
+.cart {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+}
+
+.cart h2 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.cart ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.cart ul li {
+    font-size: 1rem;
+    color: #666;
+    padding: 5px 0;
+}
+
+#total-price {
+    font-size: 1.2rem;
+    color: #333;
+    margin-top: 10px;
 }

@@ -11,24 +11,29 @@
         <h1>옷 판매 사이트</h1>
     </header>
     <div class="container">
-        <div class="product">
+        <div class="product" data-name="셔츠" data-price="30000">
             <img src="shirt.jpg" alt="셔츠">
             <h2>셔츠</h2>
             <p>가격: ₩30,000</p>
-            <button onclick="addToCart('셔츠')">구매하기</button>
+            <button>구매하기</button>
         </div>
-        <div class="product">
+        <div class="product" data-name="바지" data-price="40000">
             <img src="pants.jpg" alt="바지">
             <h2>바지</h2>
             <p>가격: ₩40,000</p>
-            <button onclick="addToCart('바지')">구매하기</button>
+            <button>구매하기</button>
         </div>
-        <div class="product">
+        <div class="product" data-name="재킷" data-price="60000">
             <img src="jacket.jpg" alt="재킷">
             <h2>재킷</h2>
             <p>가격: ₩60,000</p>
-            <button onclick="addToCart('재킷')">구매하기</button>
+            <button>구매하기</button>
         </div>
+    </div>
+    <div class="cart">
+        <h2>장바구니</h2>
+        <ul id="cart-items"></ul>
+        <p id="total-price">총 금액: ₩0</p>
     </div>
     <script src="script.js"></script>
 </body>
